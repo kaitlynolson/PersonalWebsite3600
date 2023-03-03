@@ -12,6 +12,10 @@ def hello_world():
 def about_me():
     return render_template("about.html")
     
+@app.route("/css")
+def css_file():
+    return render_template("javajam.css")
+    
 def todays_date():
     today = date.today()
     str_date = today.strftime("%B %d %Y")
